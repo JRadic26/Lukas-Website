@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(102, 153, 153) ;
+}
+header{
+    background-color: rgb(0, 102, 102);
+    text-align: center;
+}
+footer{
+    background-color: rgb(0, 102, 102);
+}
+h1{
+    font-size: 50px;
+}
+#naslov{
+    font: bold;
+}
+#komentar_naslov{
+    text-align: center;
+}
+#p1{
+   text-align: center; font-size: 30px;
+}
+#vlink{
+    text-align: left;
+}
