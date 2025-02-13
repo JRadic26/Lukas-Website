@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komentari</title>
+    <link rel="icon" type="image/png" href="images/page.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header >
+    <link rel="stylesheet" href="style.css">
+    <br>
+    <h1 id="komentar_naslov"> Stranica za komentarisanje i glasanje</h1>
+    <br>
+    <br>
+    <br>
+    <small><hr></small>
+    
+    </header>
+
+    <br>
+    <button onclick="Glas()" style="font-size: 25px;">Glasaj </button>
+    <p id="komentar" style="font-size: 20px;">Ovo je glas za cs2 competitive experience </p>
+
+    <script>
+        function Glas(){
+
+            document.getElementById("komentar").innerHTML = "Tvoj glas je dodat u listu";
+            
+        }
+    </script>
+   
+   <form action="index.php " method="GET" enctype="multipart/form-data">
+    <label for="ime">Korisnicko ime</label>
+    <input type="text" id="ime" placeholder="ime" minlength="3">
+   
+
+    <br>
+    <br>
+
+    <label for="title">Pol: </label>
+
+    <label for="Mr.">Mr.</label>
+    <input type="radio" id="Mr." value="Mr." name="title">
+    
+    <label for="Ms.">Ms.</label>
+    <input type="radio" id="Ms." value="Ms." name="title">
+
+    <label for="croissant">Croissant</label>
+    <input type="radio" id="croissant" value="croissant" name="title">
+
+    
+
+    <br>
+    <br>
+    <label for="comment">Komentar:</label>
+    <textarea id="comment" rows="4" cols="30"></textarea>
+
+
+    <br>
+    <br>
+    <label for="file" style="font-size: 25px;">Slika:</label>
+    <input type="file" style="font-size: 20px;" id="file" accept="image/png, image/jpeg" >
+
+    <br>
+    <br>
+    <input type="submit" style="font-size: 30px; background-color: yellowgreen; ">
+   </form>
+   <br>
+   <footer >
+    <small><hr></small>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <br>
+    <br>
+    &copy; copyright reserved
+   </footer>
+</body>
+</html>
